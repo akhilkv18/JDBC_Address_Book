@@ -171,6 +171,15 @@ public class AddressBook {
 	    private void showError(String title, String message) {
 	        JOptionPane.showMessageDialog(null, message, title, JOptionPane.ERROR_MESSAGE);
 	    }
+	    
+	    public static void main(String[] args) {
+	        SwingUtilities.invokeLater(new Runnable() {
+	            @Override
+	            public void run() {
+	                new AddressBook();
+	            }
+	        });
+	    }
 	  
 
 
