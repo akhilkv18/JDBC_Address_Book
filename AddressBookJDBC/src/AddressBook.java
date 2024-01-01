@@ -92,6 +92,25 @@ public class AddressBook {
 	        frame.add(panel);
 	        frame.setVisible(true);
 	    }
+	    
+	    private void insertContact(String name, String phone, String email) {
+	        String sql = "INSERT INTO contacts (name, phone, email) VALUES (?, ?, ?)";
+	        
+	        try (PreparedStatement pstmt = conn.prepareStatement(sql)) {
+	            pstmt.setString(1, name);
+	            pstmt.setString(2, phone);
+	            pstmt.setString(3, email);
+	            
+	            int rowsInserted = pstmt.executeUpdate();
+	            if (rowsInserted > 0) {
+	                JOptionPane.showMessageDialog(null, "Contact added successfully!");
+	            } else {
+	                JOptionPane.showMessageDialog(null, "Failed to add contact.");
+	            }
+	        } catch (SQLException e) {
+	            showError("Database Error", "Failed to insert contact into the database.");
+	        }
+	    }
 	  
 
 
