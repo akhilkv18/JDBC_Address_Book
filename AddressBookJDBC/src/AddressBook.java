@@ -150,6 +150,23 @@ public class AddressBook {
 	             showError("Database Error", "Failed to update email in the database.");
 	         }
 	    }
+	    
+	    private void deleteContact(String name) {
+	        String sql = "DELETE FROM contacts WHERE name=?";
+	        
+	        try (PreparedStatement pstmt = conn.prepareStatement(sql)) {
+	            pstmt.setString(1, name);
+	            
+	            int rowsDeleted = pstmt.executeUpdate();
+	            if (rowsDeleted > 0) {
+	                JOptionPane.showMessageDialog(null, "Contact deleted successfully!");
+	            } else {
+	                JOptionPane.showMessageDialog(null, "Failed to delete contact. Contact not found.");
+	            }
+	        } catch (SQLException e) {
+	            showError("Database Error", "Failed to delete contact from the database.");
+	        }
+	    }
 	  
 
 
