@@ -167,6 +167,10 @@ public class AddressBook {
 	            showError("Database Error", "Failed to delete contact from the database.");
 	        }
 	    }
+	    
+	    private void showError(String title, String message) {
+	        JOptionPane.showMessageDialog(null, message, title, JOptionPane.ERROR_MESSAGE);
+	    }
 	  
 
 
