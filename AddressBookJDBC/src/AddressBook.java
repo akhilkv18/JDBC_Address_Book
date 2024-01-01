@@ -131,6 +131,25 @@ public class AddressBook {
 			            showError("Database Error", "Failed to update mobile number in the database.");
 			        }
 	    }
+	    
+	    private void updateEmailByPhone(String name, String phone, String newEmail) {
+	    	 String sql = "UPDATE contacts SET email=? WHERE name=? AND phone=?";
+	         
+	         try (PreparedStatement pstmt = conn.prepareStatement(sql)) {
+	             pstmt.setString(1, newEmail);
+	             pstmt.setString(2, name);
+	             pstmt.setString(3, phone);
+	             
+	             int rowsUpdated = pstmt.executeUpdate();
+	             if (rowsUpdated > 0) {
+	                 JOptionPane.showMessageDialog(null, "Email updated successfully!");
+	             } else {
+	                 JOptionPane.showMessageDialog(null, "Failed to update email.");
+	             }
+	         } catch (SQLException e) {
+	             showError("Database Error", "Failed to update email in the database.");
+	         }
+	    }
 	  
 
 
