@@ -72,15 +72,11 @@ two-column layout:
 ## Appendix
 
 GUI
-![App Screenshot](https://drive.google.com/file/d/1YETMAzdf76Sv4WgUD6eu68e5iBBlEJ2l/view?usp=drive_link)
-
-![App Screenshot](https://drive.google.com/file/d/19rossK3KEkhRawIZJSGkE7Ckin7ruHOj/view?usp=drive_link)
-
-![App Screenshot](https://drive.google.com/file/d/1gLiu0kOkHxfD9hrkEoIsqfAf-iU7-XtD/view?usp=drive_link)
-
-![App Screenshot](https://drive.google.com/file/d/1UvjJkgG9lRDqcEHD9RcIOXwgaLI20Anj/view?usp=drive_link)
-
-![App Screenshot](https://drive.google.com/file/d/1zmIfO1C6O5LC1raQnYl5fzraSIBx_PV-/view?usp=drive_link)
+![main](https://github.com/akhilkv18/JDBC_Address_Book/assets/154727494/886e2262-f185-4d83-999d-a105af6ec900)
+![view](https://github.com/akhilkv18/JDBC_Address_Book/assets/154727494/4825efb0-4a06-48eb-b42b-1ffc7f76d6cb)
+![insert](https://github.com/akhilkv18/JDBC_Address_Book/assets/154727494/6f5c632d-17eb-4dd7-95e5-4c2b924c7b01)
+![update](https://github.com/akhilkv18/JDBC_Address_Book/assets/154727494/7c84aefb-6393-414e-83ca-286899dab75f)
+![delete](https://github.com/akhilkv18/JDBC_Address_Book/assets/154727494/a860a0ca-c4ec-431d-b2e4-1320ca95b6f9)
 
 
 
